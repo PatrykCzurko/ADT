@@ -9,9 +9,9 @@ public class MainList {
         list.add(3);
         list.add(0,5);
 
-        long[] tab = list.getHolderView();
+        Object [] tab = list.getHolderView();
 
-        for (long val:tab)
+        for (Object val:tab)
             System.out.print(val + " ");
     }
 }

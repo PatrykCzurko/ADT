@@ -1,22 +1,22 @@
 package pl.sda.List;
 
-public class Node {
-    private long value;
-    private Node next;
-    private Node prev;
+public class Node <T> {
+    private T value;
+    private Node<T> next;
+    private Node<T> prev;
 
-    public Node(long value){ this.value=value;
+    public Node(T value){ this.value=value;
     }
 
-    public long getValue() {
+    public T getValue() {
         return value;
     }
 
-    public void setValue(long value) {
+    public void setValue(T value) {
         this.value = value;
     }
 
-    public Node getNext() {
+    public Node<T> getNext() {
         return next;
     }
 
@@ -24,7 +24,7 @@ public class Node {
         this.next = next;
     }
 
-    public Node getPrev() {
+    public Node<T> getPrev() {
         return prev;
     }
 
